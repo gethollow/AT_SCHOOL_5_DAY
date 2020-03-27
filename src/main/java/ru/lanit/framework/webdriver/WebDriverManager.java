@@ -26,7 +26,7 @@ public class WebDriverManager {
             System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
             try {
                 ChromeOptions option = new ChromeOptions();
-                option.addArguments("--window-size=1920,1080");
+                option.addArguments("--window-size=1600,720");
                 driver = new ChromeDriver(option);
             } catch(UnreachableBrowserException e) {
                 System.err.println("Невозможно инциализировать драйвер!" + e);
